@@ -1,10 +1,25 @@
-body {
-    background: pink;
-    transition: opacity 3s;
+* {
+    margin:0 auto;
+    padding:0;
 }
 
-#wrapper {
-    max-width: 1280px;
-    background-color: #fff;
-    margin: 10px auto;
+body {
+    background: #FCD4E6;
+    box-sizing:border-box;
+}
+
+.entire {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "text image";
+}
+.box {
+    grid-area: image;
+    place-self: center center;
+}
+.text {
+    grid-area: text;
+    place-self: center center;
+    text-align: center;
 }
