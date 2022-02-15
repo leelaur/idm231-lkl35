@@ -16,11 +16,18 @@ body {
     grid-template-areas: 
     "text image";
 }
-.box {
+.closedBox {
     grid-area: image;
     place-self: center center;
     max-width: 1400px;
     padding-top: 5rem;
+}
+.openBox{
+    grid-area: image;
+    align-self: start;
+    max-width: 1000px;
+    position: relative; 
+    top: -60px;
 
 }
 .text {
@@ -31,6 +38,22 @@ body {
     left: 0; 
 
 }
+
 .subtext {
     padding: 0 5rem;
+    grid-area: text;
+}
+
+.subtext--margin{ 
+    margin-top: 1rem;
+}
+
+.donuts {
+    max-width: 500px;
+    grid-template-columns: 33.3% 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+        /* grid-template-areas:
+          'header header header header'
+          'main main . sidebar'
+          'footer footer footer footer'; */
 }
