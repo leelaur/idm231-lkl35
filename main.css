@@ -40,7 +40,6 @@ body {
     align-self: center;
     top: 0;
     left: 0; 
-
 }
 
 .subtext {
@@ -60,6 +59,7 @@ body {
   align-items: stretch;
   justify-items: center;
   justify-content: center;
+  position: absolute;
 }
 
 .donuts__img {
@@ -72,4 +72,8 @@ body {
 /* puts donut grid on right side*/
 .donutBox { 
     grid-area: image;
+    position: relative;
+    background-image: url("images/open_box.png");
+    height: 600px;
+    width: 600px;
 }
