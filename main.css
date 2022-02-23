@@ -16,6 +16,7 @@ body {
     grid-template-areas: 
     "text image";
 }
+
 .closedBox {
     grid-area: image;
     place-self: center center;
@@ -23,11 +24,15 @@ body {
     padding-top: 5rem;
 }
 .openBox{
-    grid-area: image;
-    align-self: start;
-    max-width: 1000px;
-    position: relative; 
     top: -60px;
+    background-image: url('images/open_box.png');
+        background-position: top;
+        background-size:contain;
+        background-repeat: no-repeat;
+    max-width: 1000px;
+    margin: 0 2rem 0 0;    
+    position: fixed;
+    right: 0;
 }
 
 .openBox__img {
@@ -40,6 +45,7 @@ body {
     align-self: center;
     top: 0;
     left: 0; 
+
 }
 
 .subtext {
@@ -52,28 +58,67 @@ body {
     margin-top: 1rem;
 }
 
-.donuts {
-    display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  /* grid-gap: 20px; */
-  align-items: stretch;
-  justify-items: center;
-  justify-content: center;
-  position: absolute;
-}
 
-.donuts__img {
+
+
+/* .donuts__img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 100%;
     justify-content: top;
-}
+    display: hidden;
+} */
 
 /* puts donut grid on right side*/
 .donutBox { 
     grid-area: image;
-    position: relative;
-    background-image: url("images/open_box.png");
-    height: 600px;
-    width: 600px;
+    
 }
+
+/*THE DONUTS IMG IN GRID*/
+.donuts {
+    max-width: 100px;
+    display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  z-index: 100;
+  
+}
+
+/* .donuts > div {
+    flex: 1 1 150px;
+    width: 500px;
+} */
+
+/*DONUTS IN FLEX BOX*/
+/* .donuts { 
+    max-width: 100px;
+    display: flex; 
+    flex-wrap: wrap;
+} */
+
+/* .donuts__img--1 {
+ position: absolute;
+ top: 250px;
+ left: 530px;
+}
+
+.donuts__img--2 {
+    position: absolute;
+    top: 250px;
+    left: 730px;
+   }
+
+.donuts__img--3 {
+    position: absolute;
+    top: 250px;
+    left: 930px;
+   }
+
+.donuts__img--4 {
+    position: absolute;
+    top: 250px;
+    left: 1130px;
+   } */
