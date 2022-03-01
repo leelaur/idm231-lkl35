@@ -107,10 +107,13 @@ padding-right: 30%;
     max-width: 120px;
 }
 
+/* barvarian donut sizing*/
 .donuts__img--7{
     height: 130px;
     width: 120px;
 }
+
+/* jelly donut sizing*/
 .donuts__img--1 {
     height: 120px;
     width: 135px;
@@ -124,4 +127,13 @@ padding-right: 30%;
 
 .help__img {
     width: 100px
+}
+
+.donut-btn { 
+    background-color: transparent;   
+   }
+   
+.donut-btn :hover {
+       transform: scale(1.5);
+       transition: all 0.5s ease-in-out;
 }
