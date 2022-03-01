@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDM 231</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
 </head>
-<body class="entire">
-
+<body class="wrapper">
+    <div class="box open-box"> 
+        <img src="images/open_box.png" alt="open donut box" class="open-box__img"/>     
+    </div>
     <div class="text">
         <h1> What Donut Are You?</h1>
-        <p class="subtext">Enter your birth month, day, and year in the field then click "Let's Go!" to find out what donut are you! </p>
-        <div class="subtext subtext--margin">
+        <div class="subtext">
             <p> <input type="name" placeholder="First Name"></p>
              <p> <input type="date"> </p>
-             <p> <button id=""> Submit</button></p>
-         </div>
-    </div>
-    <div class="donutBox">
-        <div> 
-            <img src="images/open_box.png" alt="open donut box" class="openBox openBox__img">
         </div>
-        
+        <div class="btn">
+             <p> <button id=""> Submit</button></p>
+        </div>
+    </div>
+    <div class="donut-box">
             <div class="donuts">
                 <img src="images/jelly.png" alt="jelly donut" class="donuts donuts__img donuts__img--1"/>
                 <img src="images/boston.png" alt="boston creme donut" class="donuts donuts__img donuts__img--2"/>
@@ -38,8 +38,6 @@
                 <img src="images/powdered.png" alt="powdered donut" class="donuts donuts__img donuts__img--12"/>
             </div>
     </div>
-            
-
     <script src="main.js"></script>
 </body>
 </html>

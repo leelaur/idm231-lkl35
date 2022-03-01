@@ -1,0 +1,86 @@
+* {
+    border: none; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background: #FCD4E6;
+    box-sizing:border-box;
+}
+
+.entire {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+    "text image";
+}
+
+.closedBox {
+    grid-area: image;
+    place-self: center center;
+    max-width: 1400px;
+    padding-top: 5rem;
+}
+.openBox{
+    top: -60px;
+    background-image: url('images/open_box.png');
+        background-position: top;
+        background-size:contain;
+        background-repeat: no-repeat;
+    max-width: 1000px;
+    margin: 0 2rem 0 0;    
+    position: fixed;
+    right: 0;
+}
+
+.openBox__img {
+    z-index: -100;
+}
+
+.text {
+    grid-area: text;
+    text-align: center;
+    align-self: center;
+    top: 0;
+    left: 0; 
+
+}
+
+.subtext {
+    padding: 0 5rem;
+    grid-area: text;
+}
+
+.subtext--margin{ 
+    /* the space between the text and the field*/
+    margin-top: 1rem;
+}
+
+
+
+
+.donuts__img {
+    /* border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+    justify-content: top; */
+
+}
+
+/* puts donut grid on right side*/
+
+
+/*THE DONUTS IMG IN GRID*/
+.donuts {
+    max-width: 100px;
+    display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  z-index: 100;
+  
+}
+
