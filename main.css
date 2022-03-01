@@ -115,3 +115,13 @@ padding-right: 30%;
     height: 120px;
     width: 135px;
 }
+
+.help {
+    position: fixed;
+    top: 0; 
+    left: 0;
+}
+
+.help__img {
+    width: 100px
+}
