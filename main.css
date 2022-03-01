@@ -19,6 +19,33 @@ html {
     row-gap: 50px;
 }
 
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .text {
+        justify-self: flex-start;
+        align-self: center;
+        position: absolute;
+    }
+    .open-box {
+        width: 100%;
+        display: flex;
+    }
+    .donut-box {
+        align-content: center;
+        position: absolute; 
+        top:240px;
+        display: flex;
+    }
+    .donuts {
+        width: 100%;
+    }
+
+}
+
 .text{
     grid-area: text;
     justify-self: flex-start;
@@ -59,19 +86,22 @@ padding-right: 30%;
     grid-area: image;
     align-self: center;
     justify-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
 }
 
 .donuts {
     display: grid;
     grid-template-columns: 110px 110px 110px 110px;
-    grid-template-rows: 110px 110px 110px 110px;
   grid-gap: 50px;
-  align-items: stretch;
+  align-items: center;
   justify-items: center;
   z-index: 100;
   justify-content: center;
-  
+  justify-self: center;
 }
+
+
 
 .donuts__img {
     max-width: 120px;
