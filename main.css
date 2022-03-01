@@ -47,6 +47,7 @@ padding-right: 30%;
     display: flex;
     justify-self: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .open-box__img {
     z-index: -100;
@@ -57,20 +58,30 @@ padding-right: 30%;
 .donut-box {
     grid-area: image;
     align-self: center;
+    justify-items: center;
 }
 
 .donuts {
     display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-gap: 20px;
+    grid-template-columns: 110px 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px 110px;
+  grid-gap: 50px;
   align-items: stretch;
   justify-items: center;
   z-index: 100;
   justify-content: center;
-
   
 }
 
 .donuts__img {
-    max-width: 100px;
+    max-width: 120px;
+}
+
+.donuts__img--7{
+    height: 130px;
+    width: 120px;
+}
+.donuts__img--1 {
+    height: 120px;
+    width: 135px;
 }
