@@ -55,6 +55,12 @@ powderedBtn.addEventListener('click', function() {
     userPicked('Sco');
 });
 
+const submitBtn = document.querySelector('.js-button')
+submitBtn.addEventListener('click', function(event)) {
+    console.log ("hi");
+}
+function
+document.getQuery
 
     // Zodiac Algorithm
     if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
