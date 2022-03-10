@@ -48,15 +48,18 @@ html {
 
 .text{
     grid-area: text;
-    justify-self: flex-start;
+    justify-self: center;
     align-self: center;
 }
+
 .subtext {
 /*margin for top and bottom title and button*/
 margin: 10px 0;
 line-height: 1.5;
 padding-right: 30%;
 }
+
+
 
 .box {
     grid-area: image;
@@ -66,8 +69,8 @@ padding-right: 30%;
     align-self: center;
     display: flex;
     justify-content: flex-end;
+    justify-self: center;
 }
-
 
 .open-box {
     align-self: flex-start;
@@ -76,6 +79,13 @@ padding-right: 30%;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+
+.closed-box__img {
+    /* margin-top: 150px; */
+    height: 1000;
+    width: 800px;
+}
+
 .open-box__img {
     z-index: -100;
     height: 800px;
@@ -120,7 +130,7 @@ padding-right: 30%;
 }
 
 .help {
-    position: fixed;
+    position: absolute;
     top: 0; 
     left: 0;
 }
@@ -133,7 +143,7 @@ padding-right: 30%;
     background-color: transparent;   
    }
    
-.donut-btn :hover {
-       transform: scale(1.5);
-       transition: all 0.5s ease-in-out;
+.donut-btn:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
 }
