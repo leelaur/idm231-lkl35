@@ -3,11 +3,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Sora', Arial, Helvetica, sans-serif;
 }
 @font-face {
     font-family: 'Sunny Spells';
     src: url('font/SunnySpells-Regular.woff2') format('woff2'),
         url('font/SunnySpells-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sora';
+    src: url('font/Sora-Regular.woff2') format('woff2'),
+        url('font/Sora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -77,8 +86,12 @@ padding-right: 30%;
     margin: 0;
     text-align: left;
     background-color: #ff80ab;
-    width: 300px;
+    max-width: 500px;
     align-items: flex-start;
+}
+
+.open-box__instruct {
+    margin-bottom: 0.5rem;
 }
 
 .closed-box__img {
@@ -101,13 +114,14 @@ padding-right: 30%;
 }
 .closed-box__btn--text {
     text-decoration: none;
-    color: #ff80ab;
+    color: #ff3d7f;
 }
 
 .open-box__btn {
     padding: 12px 28px;
     border-radius: 8px;
     margin: 0 auto;
+    color: #ff3d7f;
 }
 .closed-box__content {
     display: flex;
@@ -213,16 +227,8 @@ input {
     }
 
     .closed-box__subtext {
-        padding: 0 5rem;
+        padding: 0 2rem;
     }
-
-    /* .open-box__btn, .open-box__subtext{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100vh;
-    } */
 
     .open-box__img {
         height: 900px;
