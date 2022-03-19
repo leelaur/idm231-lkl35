@@ -61,7 +61,6 @@ padding-right: 30%;
     padding-top: 50px;
 }
 
-
 .box {
     grid-area: image;
 }
@@ -82,12 +81,10 @@ padding-right: 30%;
 }
 
 .open-box__subtext {
-    padding: 15px 20px;
-    margin: 0;
-    text-align: left;
+    padding: 15px 30px;
+    text-align: center;
     background-color: #ff80ab;
-    max-width: 500px;
-    align-items: flex-start;
+    max-width: 300px;
 }
 
 .open-box__instruct {
@@ -186,7 +183,6 @@ padding-right: 30%;
 input {
     border-radius: 8px;
     padding: 5px 10px;
-    margin-bottom: 1rem;
     border: 1px solid;
 }
 
@@ -262,4 +258,41 @@ input {
         width: 100%;
     }
 
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 110; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff80ab;
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    justify-content: center;
+  
+}
+
+.donut-img {
+    width: 30%;
+    align-content: center;
+    
+}
+
+.close {
+    cursor: pointer;
+    position: fixed; 
+    top: 0; 
+    right: 0;
 }

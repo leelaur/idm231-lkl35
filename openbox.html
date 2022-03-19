@@ -25,56 +25,75 @@
         <h1 class="title open-box__title"> What Donut Are You?</h1>
         <div class="open-box__field">
             <div class="subtext open-box__subtext">
-                <h3 class="open-box__instruct"> Enter name and birthday!</h3>
-                    <p> <input type="name" placeholder="First Name" class="js-name-input"></p>
-                    <p> <input type="date" class=""> </p>
-                </div>
+                <h3 class="open-box__instruct"> Enter your birthday!</h3>
+                <p> <input type="date" class="" id="js-date"> </p>
                 <div class="btn open-box__btn">
-                    <button id="" class="open-box__btn js-button"> Submit</button>
+                    <button id="" class="open-box__btn js-submit"> Submit</button>
                 </div>
+            </div>
+                
         </div>        
     </div>
     <div class="donut-box">
-            <div class="donuts">
-                <button class="donut-btn" id="jelly"> 
-                    <img src="images/jelly.png" alt="jelly donut" class="donuts donuts__img donuts__img--1"/>
-                </button>
-                <button class="donut-btn" id="boston"> 
-                    <img src="images/boston.png" alt="boston creme donut" class="donuts donuts__img donuts__img--2"/>
-                </button>
-                <button class="donut-btn" id="oldf"> 
-                    <img src="images/old_fashioned.png" alt="old fashioned donut" class="donuts donuts__img donuts__img--3"/>
-                </button>
-                <button class="donut-btn" id="vanilla"> 
-                    <img src="images/vanilla.png" alt="vanilla frosted donut" class="donuts donuts__img donuts__img--4"/>
-                </button>
-                <button class="donut-btn" id="strawberry"> 
-                    <img src="images/strawberry.png" alt="strawberry frosted donut" class="donuts donuts__img donuts__img--5"/>
-                </button>
-                <button class="donut-btn" id="blueberry"> 
-                    <img src="images/blueberry.png" alt="blueberry donut" class="donuts donuts__img donuts__img--6" />
-                </button>
-                <button class="donut-btn" id="barvarian"> 
-                    <img src="images/barvarian.png" alt="barvarian creme donut" class="donuts donuts__img donuts__img--7" />
-                </button>
-                <button class="donut-btn" id="crueller"> 
-                    <img src="images/crueller.png" alt="french crueller donut" class="donuts donuts__img donuts__img--8" />
-                </button>
-                <button class="donut-btn" id="coconut"> 
-                    <img src="images/coconut.png" alt="coconut donut" class="donuts donuts__img donuts__img--9" />
-                </button>
-                <button class="donut-btn" id="glazed"> 
-                    <img src="images/glazed.png" alt="glazed donut" class="donuts donuts__img donuts__img--10"/>
-                </button>
-                <button class="donut-btn" id="chocolate"> 
-                    <img src="images/chocolate.png" alt="chocolate frosted donut" class="donuts donuts__img donuts__img--11"/>
-                </button>
-                <button class="donut-btn" id="powdered"> 
-                    <img src="images/powdered.png" alt="powdered donut" class="donuts donuts__img donuts__img--12"/>
-                </button>
-
-            </div>
+        <div class="donuts">
+            <button class="donut-btn" id="jelly"> 
+                <img src="images/jelly.png" alt="jelly donut" class="donuts donuts__img donuts__img--1"/>
+            </button>
+            <button class="donut-btn" id="boston"> 
+                <img src="images/boston.png" alt="boston creme donut" class="donuts donuts__img donuts__img--2"/>
+            </button>
+            <button class="donut-btn" id="oldf"> 
+                <img src="images/old_fashioned.png" alt="old fashioned donut" class="donuts donuts__img donuts__img--3"/>
+            </button>
+            <button class="donut-btn" id="vanilla"> 
+                <img src="images/vanilla.png" alt="vanilla frosted donut" class="donuts donuts__img donuts__img--4"/>
+            </button>
+            <button class="donut-btn" id="strawberry"> 
+                <img src="images/strawberry.png" alt="strawberry frosted donut" class="donuts donuts__img donuts__img--5"/>
+            </button>
+            <button class="donut-btn" id="blueberry"> 
+                <img src="images/blueberry.png" alt="blueberry donut" class="donuts donuts__img donuts__img--6" />
+            </button>
+            <button class="donut-btn" id="barvarian"> 
+                <img src="images/barvarian.png" alt="barvarian creme donut" class="donuts donuts__img donuts__img--7" />
+            </button>
+            <button class="donut-btn" id="crueller"> 
+                <img src="images/crueller.png" alt="french crueller donut" class="donuts donuts__img donuts__img--8" />
+            </button>
+            <button class="donut-btn" id="coconut"> 
+                <img src="images/coconut.png" alt="coconut donut" class="donuts donuts__img donuts__img--9" />
+            </button>
+            <button class="donut-btn" id="glazed"> 
+                <img src="images/glazed.png" alt="glazed donut" class="donuts donuts__img donuts__img--10"/>
+            </button>
+            <button class="donut-btn" id="chocolate"> 
+                <img src="images/chocolate.png" alt="chocolate frosted donut" class="donuts donuts__img donuts__img--11"/>
+            </button>
+            <button class="donut-btn" id="powdered"> 
+                <img src="images/powdered.png" alt="powdered donut" class="donuts donuts__img donuts__img--12"/>
+            </button>
+        </div>
     </div>
+
+        <!--MODAL-->
+
+    <div id="modal" class="modal" hidden>
+        <div class="modal__content">
+            <img class="donut-img">
+            <div class="donut-title">
+                <h1><span class="donut-name"></span></h1>
+            </div>
+            <div class="donut-content">
+                <span id="close" class="close" style="font-size: 5rem; padding-right: 2rem;">&times;</span>
+                <div class="donut-description">
+                    <p><span id="date">###</span></p>
+                    <p><span id="donut-text"></span></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <audio id="sound"></audio>
     <script src="main.js"></script>
 </body>
 </html>
