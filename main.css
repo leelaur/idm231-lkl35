@@ -105,12 +105,11 @@ padding-right: 30%;
     border-radius: 8px;
     font-size: 20px;
     padding: 15px 30px;  
-    color: #fff;
+    color: #ff3d7f;
 }
 
-.closed-box__btn--text {
-    text-decoration: none;
-    color: #ff3d7f;
+.closed-box__btn:hover { 
+    background-color: lightgray;
 }
 
 .open-box__btn {
@@ -121,6 +120,9 @@ padding-right: 30%;
     cursor: pointer;
 }
 
+.open-box__btn:hover {
+    color: lightgray;
+}
 .closed-box__content {
     display: flex;
     justify-content: center;
