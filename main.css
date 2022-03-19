@@ -40,7 +40,6 @@ html {
     row-gap: 50px;
 }
 
-
 .text{
     grid-area: text;
     justify-self: center;
@@ -124,6 +123,8 @@ padding-right: 30%;
     display: flex;
     justify-content: center;
 }
+
+/* DONUTS!! */
 .donut-box {
     grid-area: image;
     align-self: center;
@@ -144,7 +145,6 @@ padding-right: 30%;
 }
 
 
-
 .donuts__img {
     max-width: 120px;
 }
@@ -161,6 +161,16 @@ padding-right: 30%;
     width: 135px;
 }
 
+.donut-btn { 
+    background-color: transparent; 
+   }
+   
+.donut-btn:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+
 .help {
     position: absolute;
     top: 0; 
@@ -171,14 +181,6 @@ padding-right: 30%;
     width: 100px;
 }
 
-.donut-btn { 
-    background-color: transparent; 
-   }
-   
-.donut-btn:hover {
-    transform: scale(1.5);
-    transition: all 0.5s ease-in-out;
-}
 
 input {
     border-radius: 8px;
@@ -201,7 +203,7 @@ input {
     .closed-box__content{
         width: 500px;
         position: absolute;
-        height: 75vh;
+        height: 80vh;
     }
     .open-box {
         width: 100%;
@@ -219,7 +221,6 @@ input {
         justify-content: flex-end;
         text-align: center;
         padding: 0 10%;
-
     }
 
     .closed-box__subtext {
@@ -263,36 +264,71 @@ input {
 /* MODAL */
 .modal {
     display: none;
-    position: fixed; /* Stay in place */
-    z-index: 110; /* Sit on top */
+    position: fixed; 
+    z-index: 110; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
 }
 
+
+
 .modal__content {
-    display: flex;
-    flex-direction: column;
-    background-color: #ff80ab;
+    background-color: #FCD4E6;
     width: 70%;
-    height: 60%;
-    margin: 0 auto;
-    justify-content: center;
-  
+    height: 70%;
+    margin: 10% 0 0 15%;
+    padding-top: 3rem;
+    border: 5px solid #ff3d7f;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+@keyframes slideIn {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 10%;
+    }
 }
 
 .donut-img {
     width: 30%;
     align-content: center;
-    
 }
 
 .close {
     cursor: pointer;
     position: fixed; 
-    top: 0; 
-    right: 0;
+    top: 1%; 
+    right: 1%;
+    color: #ff3d7f;
+    font-size: 5rem; 
+    padding: 0 25px ; 
+    border: 5px solid #ff3d7f;
+    background-color: #FCD4E6;
+}
+
+.donut-name {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 20px;
+}
+.donut-text {
+    font-size: 14pt;
+    line-height: 1.5;
+    margin: 1rem 0;
+    padding: 0 10% 10%;
+}
+
+@media screen and (max-width: 1500px) {
+    .modal__content {
+        width: 70%;
+        height: 60%;
+    }
 }
