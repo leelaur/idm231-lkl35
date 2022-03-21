@@ -106,6 +106,7 @@ padding-right: 30%;
     font-size: 20px;
     padding: 15px 30px;  
     color: #ff3d7f;
+    background-color: white;
 }
 
 .closed-box__btn:hover { 
@@ -113,15 +114,17 @@ padding-right: 30%;
 }
 
 .open-box__btn {
-    padding: 12px 28px;
+    margin-top: 1.5rem;
     border-radius: 8px;
-    margin: 0 auto;
+    font-size: 20px;
+    padding: 15px 30px;  
     color: #ff3d7f;
+    background-color: white;
     cursor: pointer;
 }
 
 .open-box__btn:hover {
-    color: lightgray;
+    background-color: lightgray;
 }
 .closed-box__content {
     display: flex;
@@ -283,7 +286,6 @@ input {
 .modal__content {
     background-color: #FCD4E6;
     width: 70%;
-    height: 70%;
     margin: 10% 0 0 15%;
     padding-top: 3rem;
     border: 5px solid #ff3d7f;
@@ -327,12 +329,11 @@ input {
     font-size: 14pt;
     line-height: 1.5;
     margin: 1rem 0;
-    padding: 0 10% 10%;
+    padding: 0 10% 50px;
 }
 
 @media screen and (max-width: 1500px) {
     .modal__content {
         width: 70%;
-        height: 60%;
     }
 }
